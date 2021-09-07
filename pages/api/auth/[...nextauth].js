@@ -10,7 +10,7 @@ const options = {
   },
   secret: process.env.JWT_SECRET,
   pages: {
-    signOut: '/auth/signout',
+    signOut: '/auth/signout'    
   },
   providers: [
     {
@@ -24,7 +24,7 @@ const options = {
         grant_type: 'authorization_code',
       },
       accessTokenUrl: `https://${tenantName}.b2clogin.com/${tenantName}.onmicrosoft.com/${userFlow}/oauth2/v2.0/token`,
-      // requestTokenUrl: `https://login.microsoftonline.com/${process.env.AUTH_TENANT_GUID}/oauth2/v2.0/token`,
+      requestTokenUrl: `https://login.microsoftonline.com/${process.env.AUTH_TENANT_GUID}/oauth2/v2.0/token`,
       authorizationUrl: `https://${tenantName}.b2clogin.com/${tenantName}.onmicrosoft.com/${userFlow}/oauth2/v2.0/authorize?response_type=code+id_token&response_mode=form_post`,
       profileUrl: 'https://graph.microsoft.com/oidc/userinfo',
       profile: (profile) => {
