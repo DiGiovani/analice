@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   
   return (
     <AuthProvider options={{ site: process.env.NEXTAUTH_URL }} session={session}>
-      <Component {...pageProps} />)
+      <Component {...pageProps} />
     </AuthProvider>
   )
 }
