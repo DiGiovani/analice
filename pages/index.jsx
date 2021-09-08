@@ -10,6 +10,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
       {session ?
+        
+        <>
+          <h1>Obrigado por fazer seu cadastro na <b>Analice</b>!</h1>
+        </>
+        :
         <>
           <h1><b>Analice</b></h1>
           <button onClick={() => router.push('https://analiceunica.b2clogin.com/analiceunica.onmicrosoft.com/B2C_1_signup-analice/oauth2/v2.0/authorize?response_type=code+id_token&response_mode=form_post&scope=offline_access%20openid&redirect_uri=https%3A%2F%2Fanalice.vercel.app%2Fapi%2Fauth%2Fcallback%2Fazureb2c&client_id=72c63f0b-2995-4ab6-849e-be9b4f94c35e')} className={styles.signupButton} type="button">
@@ -17,10 +22,7 @@ export default function Home() {
           </button>
           <p>Já tem cadastro? Faça seu <a href="https://analiceunica.b2clogin.com/analiceunica.onmicrosoft.com/B2C_1_analice/oauth2/v2.0/authorize?response_type=code+id_token&response_mode=form_post&scope=offline_access%20openid&redirect_uri=https%3A%2F%2Fanalice.vercel.app%2Fapi%2Fauth%2Fcallback%2Fazureb2c&client_id=72c63f0b-2995-4ab6-849e-be9b4f94c35e">login</a>!</p>
         </>
-        :
-        <>
-          <h1>Obrigado por fazer seu cadastro na <b>Analice</b>!</h1>
-        </>
+        
       }
     </div>
   )
