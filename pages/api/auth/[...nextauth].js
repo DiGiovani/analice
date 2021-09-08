@@ -10,7 +10,8 @@ const options = {
   },
   secret: process.env.JWT_SECRET,
   pages: {
-    signOut: '/auth/signout'    
+    signOut: '/auth/signout',
+    signIn: '/auth/signin'   
   },
   providers: [
     {
