@@ -12,7 +12,7 @@ export default function Home() {
       {session ?
         
         <>
-          <h1 >Obrigado por fazer seu cadastro na <b>Analice</b>!</h1>
+          <h1>Obrigado {session.user.name} por fazer seu cadastro na <b>Analice</b>!</h1>
         </>
         :
         <>
