@@ -6,18 +6,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color:#FFF;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(107.52deg, rgba(212, 0, 88, 0.8) 0%, rgba(0, 225, 231, 0.8) 128.32%);
 }
 
 .container h1 {
   font-size: 5rem;
-  font-weight: 800;
+  font-weight: 900;
   color:#fff;
   margin: 0;
 }
 
+.container h1.signUp {
+  font-size: 6rem;
+}
+
 .container h1 b {
   color:hsla(335, 100%, 48%, 1);
+}
+
+.container p a {
+  color:hsla(335, 100%, 48%, 1);
+ 
 }
 
 .signupButton {  
@@ -34,12 +44,16 @@
   border: none;
 
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
 
   background-color: rgba(212, 0, 88, 0.8);
   cursor: pointer;
 }
+
+
+
+
 
 @media (max-width: 600px) {
   .grid {
